@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+		<style>
+		 	main{
+				min-width: 320px;
+				max-width: 640px;
+				margin: 0 auto;
+				font-size: 1.1em;
+				color:#778ea2;
+				font-weight: bold; 
+			}
+			form{
+				background-color:#fffffc;
+				border:solid 1px #cacac8;
+				border-radius: 5px;
+				line-height:200%;
+			}
+			.form_m,.mes,.btn{
+				width: 320px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.form_m h1{
+				text-align: center;
+			}
+			.form_m ul{
+				list-style: none;
+				padding-left: 0;
+			}
+			.form_m .ul_m li{
+				display: block;
+				padding: 5px;
+				box-sizing: border-box;
+			}
+			.btn_c{
+				height: 30px;
+				width: 100px;
+				position: absolute;
+				top:4.5px;
+				right: 30px;
+			}
+			
+			.back{
+				padding-left:10%;
+			}
+			.home{
+				float: right;
+				padding-right:10%;
+			}
+			.mes{
+				position: relative;
+				text-align: center;
+				height: 39px;
+			}
+			.form_m input{
+				height: 20px;
+			}
+			.btn_c,.btn_z{
+				font-size: 1em;
+				color:#849db3;
+				font-weight: bold;
+				border:solid 2px #849DB3;
+				border-radius: 5px;
+				background-color:#F0F8FF;
+			}
+			.btn_z{
+				width: 260px;
+				margin-top: 40px;
+			}
+
+			#reg{
+				width: 260px;
+				height: 30px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<main>
+			<form action="#" method="post">
+				<div class="form_m">
+					<h1>用户注册</h1>
+					<ul class="ul_m">
+						<li>
+							<label for="name">账　　号：</label>
+							<input type="text" name="name" id="name" placeholder="手机号（用户名）" />
+						</li>
+						<li>
+							<label for="password">密　　码：</label>
+							<input type="password" name="password" id="password" placeholder="6-16个字符" />
+						</li>
+						<li>
+							<label for="repassword">确认密码：</label>
+							<input type="password" name="repassword" id="repasswoed"placeholder="请再次输入密码" />
+					</ul>
+				</div>
+				<div class="mes">
+						<input type="text" name="reg" id="reg" placeholder="请输入短信验证码"  />
+						<input type="button" class="btn_c" name="mes" value="点击获取" />
+					</div>
+				<div class="btn">
+					<input type="submit" class="btn_z" value="注册" />
+				</div>
+				<p>
+					<a class="back" href="#"><img src="images/back.png" alt="back" /></a>
+					<a class="home" href="#"><img src="images/home.png" alt="home" /></a>
+				</p>
+			</form>
+
+		</main>
+	</body>
+</html>
